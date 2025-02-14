@@ -1,1 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+    --font-atkinson: "Atkinson Hyperlegible Next", serif;
+    --color-alloyOrange: #BA6812;
+    --color-vampireBlack: #070809;
+    --color-amaranthPurple: #A53448;
+    --color-mediumSpringBud: #C8CF82;
+    --color-antiflashWhite: #EEF3F8;
+    --color-blueViolet: #7F27FF;
+    --color-royalBlue: #387ADF;
+}
+
+@layer base{
+    html {
+        @apply font-atkinson bg-vampireBlack/98 text-antiflashWhite
+    }
+}
