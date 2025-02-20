@@ -18,6 +18,6 @@
         @apply font-atkinson bg-vampireBlack/98 text-antiflashWhite lg:flex lg:flex-col lg:items-center
     }
     body {
-        @apply mx-8
+        @apply mx-8 max-w-4xl
     }
 }
