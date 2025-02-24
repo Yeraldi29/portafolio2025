@@ -1,0 +1,18 @@
+[
+    {
+        "image": "./restwithtech.png",
+        "icon": "./iconrestwithtech.png",
+        "title": "Restwithtech",
+        "sub_title": "A page about new technologies and coding",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "tecnologies": [
+            "React",
+            "Nextjs",
+            "Typescript",
+            "Firebase",
+            "Tailwindcss"
+        ],
+        "link": "https://restwithtech.vercel.app/",
+        "github": "https://github.com/Yeraldi29/restwithtech"
+    }
+]
