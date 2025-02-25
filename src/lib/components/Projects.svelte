@@ -13,8 +13,8 @@
     React: ReactIcon,
     Nextjs: NextjsIcon,
     Typescript: TypescriptIcon,
-    Firebase: TailwindcssIcon,
-    Tailwindcss: FirebaseIcon,
+    Firebase: FirebaseIcon,
+    Tailwindcss: TailwindcssIcon,
   };
 </script>
 
@@ -22,16 +22,18 @@
   <h2 class="font-bold text-2xl">Projects</h2>
 
   {#each projects as project}
-    <div class="my-6">
-      <img class="w-full h-48 rounded-xl" src={project.image} alt="" />
-      <div class="flex items-start space-x-4">
-        <div class="w-12 h-12 rounded-full border border-antiflashWhite">
+    <div class="my-6 xs:flex xs:flex-row xs:w-full xs:gap-6">
+      <a href={project.link} target="_blank">
+        <img class="w-full xs:w-auto h-52 rounded-xl " src={project.image} alt="" />
+      </a>
+      <div class="flex items-start gap-6 mt-4 ">
+        <div class="w-12 h-12 p-1 shrink-0 xs:hidden rounded-full border border-antiflashWhite ">
           <img class="w-full h-full" src={project.icon} alt="" />
         </div>
-        <div class="max-w-60">
+        <div class="max-w-72">
           <h3 class="font-bold text-lg">{project.title}</h3>
           <h3 class="text-lg">{project.sub_title}</h3>
-          <p class="text-sm">{project.description}</p>
+          <p class="text-sm py-2">{project.description}</p>
           <div class="flex flex-wrap items-center space-x-2 gap-1.5">
             {#each project.tecnologies as tech}
               {#if iconComponents[tech]}
@@ -48,7 +50,7 @@
             {/each}
           </div>
 
-          <div class="flex items-center space-x-2">
+          <div class="flex items-center space-x-4 mt-2">
             <a href={project.link} target="_blank">
               <LinkIcon />
             </a>
@@ -56,6 +58,9 @@
               <GithubIcon />
             </a>
           </div>
+        </div>
+        <div class="hidden w-12 h-12 p-1 shrink-0 xs:block rounded-full border border-antiflashWhite ">
+          <img class="w-full h-full" src={project.icon} alt="" />
         </div>
       </div>
     </div>

@@ -11,6 +11,7 @@
     --color-antiflashWhite: #EEF3F8;
     --color-blueViolet: #7F27FF;
     --color-royalBlue: #387ADF;
+    --breakpoint-xs: 40rem;
 }
 
 @layer base{

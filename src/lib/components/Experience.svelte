@@ -27,7 +27,7 @@
           <h4 class="text-sm font-semibold">
             February 01, 2023 - August 12, 2023
           </h4>
-          <p class="mt-4">
+          <p class="mt-4 text-sm">
             I worked doing several tasks in a admin panel made in laravel and I
             developed an admin panel for a client with laravel and mysql with a
             framework called Filamentphp, the admin panel has an inventory and
